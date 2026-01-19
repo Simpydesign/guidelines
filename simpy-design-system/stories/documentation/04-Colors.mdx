@@ -1,0 +1,350 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/blocks';
+import { colors } from '../../src/tokens/colors';
+
+<Meta title="Design Tokens/Cores" />
+
+# Cores
+
+O sistema de cores do Simpy Design System é projetado para criar interfaces visuais consistentes,
+acessíveis e expressivas.
+
+## Paleta Principal
+
+### Primary (Primária)
+
+Nossa cor primária é usada para ações principais, links e elementos de destaque.
+
+<ColorPalette>
+  <ColorItem
+    title="Primary"
+    subtitle="Cor primária do sistema"
+    colors={{
+      50: colors.primary[50],
+      100: colors.primary[100],
+      200: colors.primary[200],
+      300: colors.primary[300],
+      400: colors.primary[400],
+      500: colors.primary[500],
+      600: colors.primary[600],
+      700: colors.primary[700],
+      800: colors.primary[800],
+      900: colors.primary[900],
+    }}
+  />
+</ColorPalette>
+
+**Quando usar:**
+- Botões de ação principal
+- Links e elementos clicáveis
+- Estados ativos em navegação
+- Ícones de destaque
+
+---
+
+### Secondary (Secundária)
+
+A cor secundária complementa a primária e é usada para ações secundárias e variações.
+
+<ColorPalette>
+  <ColorItem
+    title="Secondary"
+    subtitle="Cor secundária do sistema"
+    colors={{
+      50: colors.secondary[50],
+      100: colors.secondary[100],
+      200: colors.secondary[200],
+      300: colors.secondary[300],
+      400: colors.secondary[400],
+      500: colors.secondary[500],
+      600: colors.secondary[600],
+      700: colors.secondary[700],
+      800: colors.secondary[800],
+      900: colors.secondary[900],
+    }}
+  />
+</ColorPalette>
+
+**Quando usar:**
+- Botões secundários
+- Badges e tags
+- Elementos de suporte visual
+- Gráficos e visualizações
+
+---
+
+### Neutral (Neutras)
+
+Cores neutras são a base do sistema, usadas para texto, fundos e bordas.
+
+<ColorPalette>
+  <ColorItem
+    title="Neutral"
+    subtitle="Escala de cinzas"
+    colors={{
+      50: colors.neutral[50],
+      100: colors.neutral[100],
+      200: colors.neutral[200],
+      300: colors.neutral[300],
+      400: colors.neutral[400],
+      500: colors.neutral[500],
+      600: colors.neutral[600],
+      700: colors.neutral[700],
+      800: colors.neutral[800],
+      900: colors.neutral[900],
+    }}
+  />
+</ColorPalette>
+
+**Quando usar:**
+- Texto (700-900 para texto principal)
+- Fundos (50-100 para fundos claros)
+- Bordas (200-300)
+- Estados desabilitados (300-400)
+
+---
+
+## Cores Semânticas
+
+### Success (Sucesso)
+
+Indica operações bem-sucedidas, estados positivos e confirmações.
+
+<ColorPalette>
+  <ColorItem
+    title="Success"
+    subtitle="Feedback positivo"
+    colors={{
+      50: colors.success[50],
+      100: colors.success[100],
+      200: colors.success[200],
+      300: colors.success[300],
+      400: colors.success[400],
+      500: colors.success[500],
+      600: colors.success[600],
+      700: colors.success[700],
+      800: colors.success[800],
+      900: colors.success[900],
+    }}
+  />
+</ColorPalette>
+
+**Quando usar:**
+- Mensagens de sucesso
+- Estados de confirmação
+- Indicadores positivos
+- Ícones de check/aprovação
+
+---
+
+### Warning (Aviso)
+
+Chama atenção para informações importantes que requerem cuidado.
+
+<ColorPalette>
+  <ColorItem
+    title="Warning"
+    subtitle="Alertas e avisos"
+    colors={{
+      50: colors.warning[50],
+      100: colors.warning[100],
+      200: colors.warning[200],
+      300: colors.warning[300],
+      400: colors.warning[400],
+      500: colors.warning[500],
+      600: colors.warning[600],
+      700: colors.warning[700],
+      800: colors.warning[800],
+      900: colors.warning[900],
+    }}
+  />
+</ColorPalette>
+
+**Quando usar:**
+- Avisos importantes
+- Estados que requerem atenção
+- Alertas não-críticos
+- Indicadores de pendência
+
+---
+
+### Error (Erro)
+
+Comunica erros, estados de falha e ações destrutivas.
+
+<ColorPalette>
+  <ColorItem
+    title="Error"
+    subtitle="Erros e ações destrutivas"
+    colors={{
+      50: colors.error[50],
+      100: colors.error[100],
+      200: colors.error[200],
+      300: colors.error[300],
+      400: colors.error[400],
+      500: colors.error[500],
+      600: colors.error[600],
+      700: colors.error[700],
+      800: colors.error[800],
+      900: colors.error[900],
+    }}
+  />
+</ColorPalette>
+
+**Quando usar:**
+- Mensagens de erro
+- Validação de formulários
+- Botões destrutivos (deletar, remover)
+- Estados de falha
+
+---
+
+### Info (Informação)
+
+Fornece informações neutras e contextuais.
+
+<ColorPalette>
+  <ColorItem
+    title="Info"
+    subtitle="Informações contextuais"
+    colors={{
+      50: colors.info[50],
+      100: colors.info[100],
+      200: colors.info[200],
+      300: colors.info[300],
+      400: colors.info[400],
+      500: colors.info[500],
+      600: colors.info[600],
+      700: colors.info[700],
+      800: colors.info[800],
+      900: colors.info[900],
+    }}
+  />
+</ColorPalette>
+
+**Quando usar:**
+- Mensagens informativas
+- Tooltips e dicas
+- Notificações neutras
+- Documentação inline
+
+---
+
+## Diretrizes de Uso
+
+### Contraste e Acessibilidade
+
+Todas as combinações de cores devem atender aos padrões WCAG 2.1 AA:
+
+- **Texto normal:** Contraste mínimo de 4.5:1
+- **Texto grande (18px+):** Contraste mínimo de 3:1
+- **Elementos de UI:** Contraste mínimo de 3:1
+
+#### Combinações Recomendadas:
+
+✅ **Boas combinações:**
+- `neutral.900` em `neutral.50` (texto escuro em fundo claro)
+- `white` em `primary.600` (texto claro em fundo escuro)
+- `neutral.700` em `white` (texto médio em fundo branco)
+
+❌ **Evitar:**
+- `neutral.400` em `white` (contraste insuficiente)
+- `warning.300` em `white` (contraste insuficiente)
+- `primary.400` em `secondary.400` (cores similares)
+
+### Hierarquia Visual
+
+Use a escala de tons para criar hierarquia:
+
+- **500-600:** Elementos primários e de maior destaque
+- **400-500:** Elementos secundários
+- **300-400:** Elementos de suporte
+- **100-200:** Backgrounds e estados hover
+- **50-100:** Backgrounds sutis
+
+### Uso de Cor em Fundos
+
+```css
+/* Fundos de página */
+background: neutral.50
+
+/* Cards e containers */
+background: white
+border: neutral.200
+
+/* Elementos em hover */
+background: primary.50
+border: primary.200
+
+/* Estados ativos */
+background: primary.100
+border: primary.300
+```
+
+### Uso de Cor em Texto
+
+```css
+/* Texto principal */
+color: neutral.900
+
+/* Texto secundário */
+color: neutral.600
+
+/* Texto terciário/hints */
+color: neutral.500
+
+/* Texto desabilitado */
+color: neutral.400
+```
+
+## Implementação no Código
+
+### Importando as Cores
+
+```tsx
+import { colors } from 'simpy-design-system/tokens';
+
+const Button = styled.button`
+  background-color: ${colors.primary[500]};
+  color: ${colors.white};
+
+  &:hover {
+    background-color: ${colors.primary[600]};
+  }
+
+  &:disabled {
+    background-color: ${colors.neutral[300]};
+    color: ${colors.neutral[500]};
+  }
+`;
+```
+
+### Usando com CSS Variables
+
+```css
+:root {
+  --color-primary: #6366F1;
+  --color-primary-hover: #4F46E5;
+  --color-text: #1F2937;
+  --color-background: #F9FAFB;
+}
+
+.button {
+  background-color: var(--color-primary);
+  color: white;
+}
+```
+
+## Modo Escuro (Dark Mode)
+
+O Simpy Design System suporta modo escuro. Use as variantes mais escuras das cores neutras:
+
+- **Fundo:** `neutral.900`
+- **Cards:** `neutral.800`
+- **Texto:** `neutral.50`
+- **Texto secundário:** `neutral.300`
+- **Bordas:** `neutral.700`
+
+---
+
+**Dica:** Use ferramentas como [Contrast Checker](https://webaim.org/resources/contrastchecker/)
+para verificar se suas combinações de cores são acessíveis.

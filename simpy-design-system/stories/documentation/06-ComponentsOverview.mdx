@@ -1,0 +1,245 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Componentes/Visão Geral" />
+
+# Componentes
+
+Biblioteca completa de componentes React do Simpy Design System.
+
+## 📦 Componentes Disponíveis
+
+### Formulários
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem', margin: '2rem 0' }}>
+  <div style={{ border: '2px solid #E5E7EB', borderRadius: '12px', padding: '1.5rem' }}>
+    <h3 style={{ margin: '0 0 0.5rem 0', color: '#6366F1' }}>Button</h3>
+    <p style={{ margin: '0 0 1rem 0', color: '#6B7280', fontSize: '0.875rem' }}>
+      Botões para ações e interações do usuário
+    </p>
+    <a href="?path=/docs/componentes-button--docs" style={{ color: '#6366F1', fontWeight: '600', fontSize: '0.875rem' }}>
+      Ver documentação →
+    </a>
+  </div>
+
+  <div style={{ border: '2px solid #E5E7EB', borderRadius: '12px', padding: '1.5rem' }}>
+    <h3 style={{ margin: '0 0 0.5rem 0', color: '#6366F1' }}>Input</h3>
+    <p style={{ margin: '0 0 1rem 0', color: '#6B7280', fontSize: '0.875rem' }}>
+      Campos de entrada de texto com validação
+    </p>
+    <a href="?path=/docs/componentes-input--docs" style={{ color: '#6366F1', fontWeight: '600', fontSize: '0.875rem' }}>
+      Ver documentação →
+    </a>
+  </div>
+</div>
+
+### Layout
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem', margin: '2rem 0' }}>
+  <div style={{ border: '2px solid #E5E7EB', borderRadius: '12px', padding: '1.5rem' }}>
+    <h3 style={{ margin: '0 0 0.5rem 0', color: '#6366F1' }}>Card</h3>
+    <p style={{ margin: '0 0 1rem 0', color: '#6B7280', fontSize: '0.875rem' }}>
+      Containers versáteis para agrupar conteúdo
+    </p>
+    <a href="?path=/docs/componentes-card--docs" style={{ color: '#6366F1', fontWeight: '600', fontSize: '0.875rem' }}>
+      Ver documentação →
+    </a>
+  </div>
+</div>
+
+---
+
+## 🎯 Como Usar
+
+### 1. Instalação
+
+```bash
+npm install simpy-design-system
+```
+
+### 2. Importação
+
+```tsx
+import { Button, Input, Card } from 'simpy-design-system';
+import 'simpy-design-system/dist/styles.css';
+```
+
+### 3. Uso
+
+```tsx
+function MeuFormulario() {
+  return (
+    <Card>
+      <Input
+        label="Nome"
+        placeholder="Digite seu nome"
+      />
+      <Button variant="primary">
+        Enviar
+      </Button>
+    </Card>
+  );
+}
+```
+
+---
+
+## 📋 Padrões de Uso
+
+### Props Comuns
+
+Todos os componentes seguem padrões consistentes:
+
+#### Size (Tamanho)
+```tsx
+size?: 'sm' | 'md' | 'lg'
+```
+- **sm:** Compacto, para espaços limitados
+- **md:** Padrão, uso geral
+- **lg:** Grande, para destaque
+
+#### Variant (Variante)
+```tsx
+variant?: 'primary' | 'secondary' | 'outline' | 'ghost'
+```
+Define o estilo visual do componente
+
+#### Disabled (Desabilitado)
+```tsx
+disabled?: boolean
+```
+Desabilita interação com o componente
+
+#### FullWidth (Largura Total)
+```tsx
+fullWidth?: boolean
+```
+Faz o componente ocupar 100% da largura disponível
+
+### Acessibilidade
+
+Todos os componentes incluem:
+
+- ✅ ARIA labels apropriados
+- ✅ Navegação por teclado
+- ✅ Estados de foco visíveis
+- ✅ Suporte a leitores de tela
+- ✅ Semântica HTML correta
+
+### TypeScript
+
+Todos os componentes têm tipos TypeScript completos:
+
+```tsx
+import { ButtonProps, InputProps } from 'simpy-design-system';
+
+const minhasPropsBotao: ButtonProps = {
+  variant: 'primary',
+  size: 'md',
+  children: 'Clique aqui'
+};
+```
+
+---
+
+## 🎨 Customização
+
+### Usando com Styled Components
+
+```tsx
+import styled from 'styled-components';
+import { Button } from 'simpy-design-system';
+
+const CustomButton = styled(Button)`
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+  &:hover {
+    transform: scale(1.05);
+  }
+`;
+```
+
+### Sobrescrevendo Estilos com CSS
+
+```css
+.simpy-button.meu-botao-custom {
+  background-color: #custom-color;
+  border-radius: 20px;
+}
+```
+
+---
+
+## 📖 Documentação dos Componentes
+
+Cada componente possui documentação completa incluindo:
+
+1. **Descrição** - O que o componente faz
+2. **Quando usar** - Casos de uso apropriados
+3. **Quando não usar** - Alternativas recomendadas
+4. **Props** - Todas as propriedades disponíveis
+5. **Exemplos** - Casos de uso práticos
+6. **Acessibilidade** - Considerações especiais
+7. **Best Practices** - Melhores práticas
+
+---
+
+## 🚀 Próximos Componentes
+
+Componentes planejados para próximas versões:
+
+- 📋 **Select** - Seleção de opções
+- ☑️ **Checkbox** - Múltipla seleção
+- 🔘 **Radio** - Seleção única
+- 🎚️ **Switch** - Toggle on/off
+- 📝 **Textarea** - Entrada de texto longo
+- 🏷️ **Badge** - Etiquetas e status
+- 🔔 **Alert** - Mensagens de feedback
+- 📊 **Table** - Tabelas de dados
+- 🎭 **Modal** - Diálogos e modais
+- 🍞 **Toast** - Notificações temporárias
+- 📑 **Tabs** - Navegação em abas
+- 🎢 **Accordion** - Conteúdo recolhível
+
+---
+
+## 💡 Dicas de Performance
+
+### Tree Shaking
+
+Importe apenas os componentes que você precisa:
+
+```tsx
+// ✅ Bom - apenas Button é incluído no bundle
+import { Button } from 'simpy-design-system';
+
+// ❌ Evitar - importa toda a biblioteca
+import * as Simpy from 'simpy-design-system';
+```
+
+### Lazy Loading
+
+Para componentes grandes, use lazy loading:
+
+```tsx
+import { lazy, Suspense } from 'react';
+
+const Card = lazy(() => import('simpy-design-system').then(m => ({ default: m.Card })));
+
+function App() {
+  return (
+    <Suspense fallback={<div>Carregando...</div>}>
+      <Card>Conteúdo</Card>
+    </Suspense>
+  );
+}
+```
+
+---
+
+## 🤝 Contribuindo
+
+Quer contribuir com novos componentes? Veja nosso [guia de contribuição](https://github.com/simpy/design-system/CONTRIBUTING.md).
+
+---
+
+**Explore os componentes usando a navegação à esquerda!**

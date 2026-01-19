@@ -1,0 +1,174 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Introdução/Bem-vindo" />
+
+<style>
+  {`
+    .hero {
+      background: linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%);
+      padding: 4rem 2rem;
+      border-radius: 16px;
+      color: white;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      font-weight: 800;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      opacity: 0.95;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+
+    .feature-card {
+      background: #F9FAFB;
+      padding: 2rem;
+      border-radius: 12px;
+      border: 1px solid #E5E7EB;
+    }
+
+    .feature-card h3 {
+      color: #6366F1;
+      margin-bottom: 0.5rem;
+    }
+
+    .feature-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .quick-links {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .link-button {
+      background: #6366F1;
+      color: white;
+      padding: 0.75rem 2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .link-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(99, 102, 241, 0.3);
+    }
+
+    .link-button.secondary {
+      background: white;
+      color: #6366F1;
+      border: 2px solid #6366F1;
+    }
+  `}
+</style>
+
+<div className="hero">
+  <h1>Simpy Design System</h1>
+  <p>
+    Sistema de design completo para criar experiências digitais consistentes,
+    acessíveis e escaláveis
+  </p>
+</div>
+
+## O que é o Simpy Design System?
+
+O **Simpy Design System** é uma biblioteca completa de componentes, padrões e diretrizes que ajudam
+equipes de design e desenvolvimento a criar produtos digitais de forma mais rápida e consistente.
+
+<div className="features">
+  <div className="feature-card">
+    <div className="feature-icon">🎨</div>
+    <h3>Design Tokens</h3>
+    <p>
+      Cores, tipografia, espaçamentos e outros tokens reutilizáveis para manter
+      a consistência visual em todos os produtos.
+    </p>
+  </div>
+
+  <div className="feature-card">
+    <div className="feature-icon">🧩</div>
+    <h3>Componentes</h3>
+    <p>
+      Biblioteca completa de componentes React prontos para uso, testados e
+      acessíveis por padrão.
+    </p>
+  </div>
+
+  <div className="feature-card">
+    <div className="feature-icon">📱</div>
+    <h3>Responsivo</h3>
+    <p>
+      Todos os componentes são responsivos e funcionam perfeitamente em
+      dispositivos móveis, tablets e desktop.
+    </p>
+  </div>
+
+  <div className="feature-card">
+    <div className="feature-icon">♿</div>
+    <h3>Acessível</h3>
+    <p>
+      Construído seguindo as diretrizes WCAG 2.1 AA, garantindo que todos
+      possam usar nossos produtos.
+    </p>
+  </div>
+
+  <div className="feature-card">
+    <div className="feature-icon">⚡</div>
+    <h3>Performance</h3>
+    <p>
+      Componentes otimizados para performance, com bundle size reduzido e
+      carregamento rápido.
+    </p>
+  </div>
+
+  <div className="feature-card">
+    <div className="feature-icon">📚</div>
+    <h3>Documentação</h3>
+    <p>
+      Documentação completa com exemplos práticos, boas práticas e
+      casos de uso reais.
+    </p>
+  </div>
+</div>
+
+## Por onde começar?
+
+<div className="quick-links">
+  <a href="?path=/docs/introdução-instalação--docs" className="link-button">
+    Instalação
+  </a>
+  <a href="?path=/docs/design-tokens-cores--docs" className="link-button secondary">
+    Ver Design Tokens
+  </a>
+  <a href="?path=/docs/componentes-visão-geral--docs" className="link-button secondary">
+    Ver Componentes
+  </a>
+</div>
+
+## Quem usa o Simpy Design System?
+
+O Simpy Design System é utilizado por equipes de produto, designers e desenvolvedores
+que buscam criar experiências digitais de alta qualidade de forma eficiente e consistente.
+
+---
+
+**Versão:** 1.0.0 | **Última atualização:** Janeiro 2026

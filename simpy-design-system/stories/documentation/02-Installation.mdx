@@ -1,0 +1,159 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Introdução/Instalação" />
+
+# Instalação
+
+Aprenda como instalar e configurar o Simpy Design System em seu projeto.
+
+## Pré-requisitos
+
+Antes de começar, certifique-se de ter:
+
+- **Node.js** versão 16 ou superior
+- **npm** ou **yarn** instalado
+- Um projeto **React** versão 18 ou superior
+
+## Instalação via NPM
+
+```bash
+npm install simpy-design-system
+```
+
+## Instalação via Yarn
+
+```bash
+yarn add simpy-design-system
+```
+
+## Configuração Inicial
+
+### 1. Importar o CSS Global
+
+No arquivo principal da sua aplicação (geralmente `App.tsx` ou `index.tsx`), importe o CSS global:
+
+```tsx
+import 'simpy-design-system/dist/styles.css';
+```
+
+### 2. Usar os Componentes
+
+Agora você pode importar e usar os componentes:
+
+```tsx
+import React from 'react';
+import { Button, Card, Input } from 'simpy-design-system';
+
+function App() {
+  return (
+    <div>
+      <Card>
+        <h1>Bem-vindo ao Simpy Design System</h1>
+        <Input placeholder="Digite seu nome" />
+        <Button variant="primary">Começar</Button>
+      </Card>
+    </div>
+  );
+}
+
+export default App;
+```
+
+## Configuração Avançada
+
+### TypeScript
+
+O Simpy Design System inclui definições de tipos TypeScript. Não é necessária configuração adicional.
+
+```tsx
+import { ButtonProps } from 'simpy-design-system';
+
+const MyButton: React.FC<ButtonProps> = (props) => {
+  return <Button {...props} />;
+};
+```
+
+### Design Tokens
+
+Você pode importar e usar os design tokens diretamente:
+
+```tsx
+import { colors, typography, spacing } from 'simpy-design-system/tokens';
+
+const styles = {
+  background: colors.primary[500],
+  fontSize: typography.fontSize.lg,
+  padding: spacing[4],
+};
+```
+
+### Customização de Tema
+
+Para customizar o tema padrão, crie um arquivo de configuração:
+
+```tsx
+// theme.config.ts
+import { createTheme } from 'simpy-design-system';
+
+export const customTheme = createTheme({
+  colors: {
+    primary: {
+      500: '#FF6B6B', // Substituir a cor primária
+    },
+  },
+  typography: {
+    fontFamily: {
+      primary: '"Montserrat", sans-serif',
+    },
+  },
+});
+```
+
+E então aplique o tema customizado:
+
+```tsx
+import { ThemeProvider } from 'simpy-design-system';
+import { customTheme } from './theme.config';
+
+function App() {
+  return (
+    <ThemeProvider theme={customTheme}>
+      {/* Sua aplicação */}
+    </ThemeProvider>
+  );
+}
+```
+
+## Próximos Passos
+
+Agora que você tem o Simpy Design System instalado, explore:
+
+- **[Design Tokens](/docs/design-tokens-cores--docs)** - Entenda o sistema de design tokens
+- **[Componentes](/docs/componentes-visão-geral--docs)** - Veja todos os componentes disponíveis
+- **[Fundamentos](/docs/fundamentos-princípios--docs)** - Conheça os princípios do design system
+
+## Precisa de Ajuda?
+
+Se encontrar problemas durante a instalação:
+
+1. Verifique a versão do Node.js e React
+2. Limpe o cache do npm/yarn: `npm cache clean --force`
+3. Reinstale as dependências: `rm -rf node_modules && npm install`
+4. Consulte a [documentação completa](https://docs.simpy.design)
+
+## Atualizações
+
+Para atualizar para a versão mais recente:
+
+```bash
+npm update simpy-design-system
+```
+
+Ou com yarn:
+
+```bash
+yarn upgrade simpy-design-system
+```
+
+Sempre consulte o [CHANGELOG](https://github.com/simpy/design-system/CHANGELOG.md) para ver as
+mudanças entre versões.

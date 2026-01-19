@@ -1,0 +1,371 @@
+import { Meta } from '@storybook/blocks';
+import { typography } from '../../src/tokens/typography';
+
+<Meta title="Design Tokens/Tipografia" />
+
+# Tipografia
+
+O sistema tipográfico do Simpy Design System é projetado para criar hierarquia clara e legibilidade
+em todos os tamanhos de tela.
+
+## Famílias Tipográficas
+
+### Primary (Principal)
+
+```css
+font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+```
+
+**Inter** é nossa fonte principal, usada para a maioria do texto na interface.
+
+**Características:**
+- Excelente legibilidade em telas
+- Ampla variedade de pesos
+- Suporte a múltiplos idiomas
+- Otimizada para UI
+
+**Quando usar:**
+- Texto de interface
+- Botões e labels
+- Formulários
+- Navegação
+
+---
+
+### Secondary (Secundária)
+
+```css
+font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+```
+
+**Poppins** é usada para títulos e elementos de destaque.
+
+**Características:**
+- Formas geométricas modernas
+- Ótima para títulos
+- Visual amigável e acessível
+
+**Quando usar:**
+- Títulos principais (H1, H2)
+- Chamadas de destaque (CTAs)
+- Marketing e landing pages
+
+---
+
+### Mono (Monoespaçada)
+
+```css
+font-family: 'Fira Code', 'Courier New', monospace;
+```
+
+**Fira Code** é usada para código e dados técnicos.
+
+**Quando usar:**
+- Blocos de código
+- Valores numéricos técnicos
+- Logs e debugging
+- Dados tabulares
+
+---
+
+## Escala de Tamanhos
+
+<div style={{ marginTop: '2rem' }}>
+  <div style={{ marginBottom: '1.5rem' }}>
+    <div style={{ fontSize: '0.75rem', color: '#6B7280', marginBottom: '0.25rem' }}>
+      xs - 0.75rem (12px)
+    </div>
+    <div style={{ fontSize: '0.75rem', fontWeight: '400' }}>
+      The quick brown fox jumps over the lazy dog
+    </div>
+  </div>
+
+  <div style={{ marginBottom: '1.5rem' }}>
+    <div style={{ fontSize: '0.75rem', color: '#6B7280', marginBottom: '0.25rem' }}>
+      sm - 0.875rem (14px)
+    </div>
+    <div style={{ fontSize: '0.875rem', fontWeight: '400' }}>
+      The quick brown fox jumps over the lazy dog
+    </div>
+  </div>
+
+  <div style={{ marginBottom: '1.5rem' }}>
+    <div style={{ fontSize: '0.75rem', color: '#6B7280', marginBottom: '0.25rem' }}>
+      base - 1rem (16px)
+    </div>
+    <div style={{ fontSize: '1rem', fontWeight: '400' }}>
+      The quick brown fox jumps over the lazy dog
+    </div>
+  </div>
+
+  <div style={{ marginBottom: '1.5rem' }}>
+    <div style={{ fontSize: '0.75rem', color: '#6B7280', marginBottom: '0.25rem' }}>
+      lg - 1.125rem (18px)
+    </div>
+    <div style={{ fontSize: '1.125rem', fontWeight: '400' }}>
+      The quick brown fox jumps over the lazy dog
+    </div>
+  </div>
+
+  <div style={{ marginBottom: '1.5rem' }}>
+    <div style={{ fontSize: '0.75rem', color: '#6B7280', marginBottom: '0.25rem' }}>
+      xl - 1.25rem (20px)
+    </div>
+    <div style={{ fontSize: '1.25rem', fontWeight: '400' }}>
+      The quick brown fox jumps over the lazy dog
+    </div>
+  </div>
+
+  <div style={{ marginBottom: '1.5rem' }}>
+    <div style={{ fontSize: '0.75rem', color: '#6B7280', marginBottom: '0.25rem' }}>
+      2xl - 1.5rem (24px)
+    </div>
+    <div style={{ fontSize: '1.5rem', fontWeight: '400' }}>
+      The quick brown fox jumps over the lazy dog
+    </div>
+  </div>
+
+  <div style={{ marginBottom: '1.5rem' }}>
+    <div style={{ fontSize: '0.75rem', color: '#6B7280', marginBottom: '0.25rem' }}>
+      3xl - 1.875rem (30px)
+    </div>
+    <div style={{ fontSize: '1.875rem', fontWeight: '400' }}>
+      The quick brown fox jumps over the lazy dog
+    </div>
+  </div>
+
+  <div style={{ marginBottom: '1.5rem' }}>
+    <div style={{ fontSize: '0.75rem', color: '#6B7280', marginBottom: '0.25rem' }}>
+      4xl - 2.25rem (36px)
+    </div>
+    <div style={{ fontSize: '2.25rem', fontWeight: '400' }}>
+      The quick brown fox
+    </div>
+  </div>
+
+  <div style={{ marginBottom: '1.5rem' }}>
+    <div style={{ fontSize: '0.75rem', color: '#6B7280', marginBottom: '0.25rem' }}>
+      5xl - 3rem (48px)
+    </div>
+    <div style={{ fontSize: '3rem', fontWeight: '400' }}>
+      The quick brown
+    </div>
+  </div>
+
+  <div style={{ marginBottom: '1.5rem' }}>
+    <div style={{ fontSize: '0.75rem', color: '#6B7280', marginBottom: '0.25rem' }}>
+      6xl - 3.75rem (60px)
+    </div>
+    <div style={{ fontSize: '3.75rem', fontWeight: '400' }}>
+      Quick Fox
+    </div>
+  </div>
+</div>
+
+---
+
+## Pesos (Font Weight)
+
+<div style={{ marginTop: '2rem' }}>
+  <div style={{ marginBottom: '1rem', fontSize: '1.125rem' }}>
+    <span style={{ fontWeight: 300 }}>Light (300)</span> - Texto leve
+  </div>
+  <div style={{ marginBottom: '1rem', fontSize: '1.125rem' }}>
+    <span style={{ fontWeight: 400 }}>Regular (400)</span> - Texto padrão
+  </div>
+  <div style={{ marginBottom: '1rem', fontSize: '1.125rem' }}>
+    <span style={{ fontWeight: 500 }}>Medium (500)</span> - Destaque sutil
+  </div>
+  <div style={{ marginBottom: '1rem', fontSize: '1.125rem' }}>
+    <span style={{ fontWeight: 600 }}>Semibold (600)</span> - Subtítulos
+  </div>
+  <div style={{ marginBottom: '1rem', fontSize: '1.125rem' }}>
+    <span style={{ fontWeight: 700 }}>Bold (700)</span> - Títulos e ênfase
+  </div>
+  <div style={{ marginBottom: '1rem', fontSize: '1.125rem' }}>
+    <span style={{ fontWeight: 800 }}>Extrabold (800)</span> - Muito forte
+  </div>
+</div>
+
+---
+
+## Hierarquia Tipográfica
+
+### Títulos (Headings)
+
+```css
+/* H1 - Título Principal */
+font-size: 3rem (48px)
+font-weight: 800
+line-height: 1.2
+font-family: Poppins
+
+/* H2 - Título de Seção */
+font-size: 2.25rem (36px)
+font-weight: 700
+line-height: 1.25
+font-family: Poppins
+
+/* H3 - Subtítulo */
+font-size: 1.875rem (30px)
+font-weight: 600
+line-height: 1.3
+font-family: Inter
+
+/* H4 - Título Menor */
+font-size: 1.5rem (24px)
+font-weight: 600
+line-height: 1.4
+
+/* H5 - Título de Card */
+font-size: 1.25rem (20px)
+font-weight: 600
+line-height: 1.5
+
+/* H6 - Menor Título */
+font-size: 1.125rem (18px)
+font-weight: 600
+line-height: 1.5
+```
+
+### Corpo de Texto (Body)
+
+```css
+/* Body Large */
+font-size: 1.125rem (18px)
+font-weight: 400
+line-height: 1.625
+
+/* Body Default */
+font-size: 1rem (16px)
+font-weight: 400
+line-height: 1.5
+
+/* Body Small */
+font-size: 0.875rem (14px)
+font-weight: 400
+line-height: 1.5
+
+/* Caption */
+font-size: 0.75rem (12px)
+font-weight: 400
+line-height: 1.5
+color: #6B7280
+```
+
+---
+
+## Diretrizes de Uso
+
+### Legibilidade
+
+**Comprimento de Linha:**
+- Texto ideal: 50-75 caracteres por linha
+- Máximo: 90 caracteres
+- Mínimo: 40 caracteres
+
+**Line Height (Espaçamento entre linhas):**
+- Títulos: 1.2 - 1.3 (tight/snug)
+- Corpo de texto: 1.5 - 1.625 (normal/relaxed)
+- Texto denso: 1.75 - 2 (loose)
+
+### Contraste
+
+- Texto principal: `neutral.900` em fundo claro
+- Texto secundário: `neutral.600` ou `neutral.700`
+- Texto terciário: `neutral.500`
+
+Sempre mantenha contraste mínimo de **4.5:1** para texto normal.
+
+### Hierarquia
+
+Use a hierarquia tipográfica para guiar o olhar:
+
+1. **Título principal (H1)** - Um por página
+2. **Títulos de seção (H2)** - Separam grandes blocos
+3. **Subtítulos (H3-H4)** - Organizam conteúdo dentro de seções
+4. **Corpo de texto** - Conteúdo principal
+5. **Captions e notas** - Informações suplementares
+
+### Responsividade
+
+Ajuste tamanhos em breakpoints menores:
+
+```css
+/* Desktop */
+h1 { font-size: 3rem; }
+h2 { font-size: 2.25rem; }
+body { font-size: 1rem; }
+
+/* Tablet */
+@media (max-width: 1024px) {
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 2rem; }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.5rem; }
+  body { font-size: 0.875rem; }
+}
+```
+
+---
+
+## Implementação
+
+### Importando Tokens
+
+```tsx
+import { typography } from 'simpy-design-system/tokens';
+
+const Heading = styled.h1`
+  font-family: ${typography.fontFamily.secondary};
+  font-size: ${typography.fontSize['4xl']};
+  font-weight: ${typography.fontWeight.bold};
+  line-height: ${typography.lineHeight.tight};
+`;
+```
+
+### CSS Variables
+
+```css
+:root {
+  --font-primary: 'Inter', sans-serif;
+  --font-secondary: 'Poppins', sans-serif;
+  --font-mono: 'Fira Code', monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+}
+```
+
+---
+
+## Acessibilidade
+
+✅ **Boas práticas:**
+- Use tamanho mínimo de 16px para texto principal
+- Mantenha contraste adequado (4.5:1 para texto, 3:1 para texto grande)
+- Evite texto todo em maiúsculas (dificulta leitura)
+- Permita zoom até 200% sem quebrar layout
+- Não use apenas cor para transmitir informação
+
+❌ **Evitar:**
+- Texto menor que 12px
+- Cinza claro em fundo branco
+- Comprimento de linha muito longo
+- Line height muito apertado (<1.2)
+
+---
+
+**Dica:** Use ferramentas como [Type Scale](https://typescale.com/) para visualizar
+e testar escalas tipográficas.

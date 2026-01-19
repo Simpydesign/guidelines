@@ -1,0 +1,63 @@
+.simpy-card {
+  background-color: white;
+  border-radius: 0.75rem;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Variants */
+.simpy-card--elevated {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.simpy-card--outlined {
+  border: 2px solid #E5E7EB;
+}
+
+.simpy-card--filled {
+  background-color: #F9FAFB;
+  border: 1px solid #E5E7EB;
+}
+
+/* Padding */
+.simpy-card--padding-none {
+  padding: 0;
+}
+
+.simpy-card--padding-sm {
+  padding: 1rem;
+}
+
+.simpy-card--padding-md {
+  padding: 1.5rem;
+}
+
+.simpy-card--padding-lg {
+  padding: 2rem;
+}
+
+/* Hoverable */
+.simpy-card--hoverable:hover {
+  transform: translateY(-2px);
+}
+
+.simpy-card--elevated.simpy-card--hoverable:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.simpy-card--outlined.simpy-card--hoverable:hover {
+  border-color: #6366F1;
+}
+
+/* Clickable */
+.simpy-card--clickable {
+  cursor: pointer;
+}
+
+.simpy-card--clickable:focus-visible {
+  outline: 2px solid #6366F1;
+  outline-offset: 2px;
+}
+
+.simpy-card--clickable:active {
+  transform: scale(0.98);
+}

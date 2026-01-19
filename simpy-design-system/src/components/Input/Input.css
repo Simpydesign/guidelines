@@ -1,0 +1,129 @@
+.simpy-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.simpy-input-container--full-width {
+  width: 100%;
+}
+
+.simpy-input-label {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  display: block;
+}
+
+.simpy-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.simpy-input {
+  width: 100%;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 1rem;
+  color: #1F2937;
+  background-color: white;
+  border: 2px solid #D1D5DB;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+}
+
+.simpy-input::placeholder {
+  color: #9CA3AF;
+}
+
+.simpy-input:hover:not(:disabled) {
+  border-color: #9CA3AF;
+}
+
+.simpy-input:focus {
+  border-color: #6366F1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.simpy-input:disabled {
+  background-color: #F3F4F6;
+  color: #9CA3AF;
+  cursor: not-allowed;
+}
+
+/* Sizes */
+.simpy-input-wrapper--sm .simpy-input {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  min-height: 2rem;
+}
+
+.simpy-input-wrapper--md .simpy-input {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  min-height: 2.75rem;
+}
+
+.simpy-input-wrapper--lg .simpy-input {
+  padding: 1rem 1.25rem;
+  font-size: 1.125rem;
+  min-height: 3.5rem;
+}
+
+/* With Icons */
+.simpy-input-wrapper--with-left-icon .simpy-input {
+  padding-left: 2.75rem;
+}
+
+.simpy-input-wrapper--with-right-icon .simpy-input {
+  padding-right: 2.75rem;
+}
+
+.simpy-input-icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6B7280;
+  pointer-events: none;
+}
+
+.simpy-input-icon--left {
+  left: 0.75rem;
+}
+
+.simpy-input-icon--right {
+  right: 0.75rem;
+}
+
+/* Error State */
+.simpy-input-wrapper--error .simpy-input {
+  border-color: #EF4444;
+}
+
+.simpy-input-wrapper--error .simpy-input:focus {
+  border-color: #EF4444;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+/* Disabled State */
+.simpy-input-wrapper--disabled {
+  opacity: 0.6;
+}
+
+/* Messages */
+.simpy-input-message {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 0.875rem;
+  display: block;
+}
+
+.simpy-input-message--error {
+  color: #EF4444;
+}
+
+.simpy-input-message--helper {
+  color: #6B7280;
+}
