@@ -35,6 +35,6 @@ export default create({
   inputBorderRadius: 6,
 
   // Font
-  fontBase: '"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+  fontBase: '"Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
   fontCode: '"Fira Code", "Courier New", monospace',
 });

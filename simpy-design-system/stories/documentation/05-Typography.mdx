@@ -6,65 +6,54 @@ import { typography } from '../../src/tokens/typography';
 # Tipografia
 
 O sistema tipográfico do Simpy Design System é projetado para criar hierarquia clara e legibilidade
-em todos os tamanhos de tela.
+em todos os tamanhos de tela, com **Poppins** como fonte oficial.
 
 ## Famílias Tipográficas
 
-### Primary (Principal)
-
-```css
-font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-```
-
-**Inter** é nossa fonte principal, usada para a maioria do texto na interface.
-
-**Características:**
-- Excelente legibilidade em telas
-- Ampla variedade de pesos
-- Suporte a múltiplos idiomas
-- Otimizada para UI
-
-**Quando usar:**
-- Texto de interface
-- Botões e labels
-- Formulários
-- Navegação
-
----
-
-### Secondary (Secundária)
+### Poppins (Fonte Oficial)
 
 ```css
 font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 ```
 
-**Poppins** é usada para títulos e elementos de destaque.
+**Poppins** é a fonte oficial do Simpy Design System, usada em toda a interface.
 
 **Características:**
-- Formas geométricas modernas
-- Ótima para títulos
-- Visual amigável e acessível
+- Formas geométricas modernas e amigáveis
+- Excelente legibilidade em telas de todos os tamanhos
+- Ampla variedade de pesos (300-800)
+- Suporte a múltiplos idiomas
+- Visual limpo e profissional
+- Otimizada para interfaces digitais
 
 **Quando usar:**
-- Títulos principais (H1, H2)
-- Chamadas de destaque (CTAs)
-- Marketing e landing pages
+- Todo texto de interface (padrão)
+- Títulos e headings
+- Botões e labels
+- Formulários e inputs
+- Corpo de texto
+- Navegação
+
+**Origem:**
+Poppins foi projetada por Indian Type Foundry e é uma das fontes geométricas sans-serif mais populares
+do Google Fonts. [Ver no Google Fonts →](https://fonts.google.com/specimen/Poppins)
 
 ---
 
-### Mono (Monoespaçada)
+### Fira Code (Monoespaçada)
 
 ```css
 font-family: 'Fira Code', 'Courier New', monospace;
 ```
 
-**Fira Code** é usada para código e dados técnicos.
+**Fira Code** é usada exclusivamente para código e dados técnicos.
 
 **Quando usar:**
 - Blocos de código
 - Valores numéricos técnicos
 - Logs e debugging
 - Dados tabulares
+- Terminal output
 
 ---
 
@@ -75,7 +64,7 @@ font-family: 'Fira Code', 'Courier New', monospace;
     <div style={{ fontSize: '0.75rem', color: '#6B7280', marginBottom: '0.25rem' }}>
       xs - 0.75rem (12px)
     </div>
-    <div style={{ fontSize: '0.75rem', fontWeight: '400' }}>
+    <div style={{ fontSize: '0.75rem', fontWeight: '400', fontFamily: 'Poppins' }}>
       The quick brown fox jumps over the lazy dog
     </div>
   </div>
@@ -84,7 +73,7 @@ font-family: 'Fira Code', 'Courier New', monospace;
     <div style={{ fontSize: '0.75rem', color: '#6B7280', marginBottom: '0.25rem' }}>
       sm - 0.875rem (14px)
     </div>
-    <div style={{ fontSize: '0.875rem', fontWeight: '400' }}>
+    <div style={{ fontSize: '0.875rem', fontWeight: '400', fontFamily: 'Poppins' }}>
       The quick brown fox jumps over the lazy dog
     </div>
   </div>
@@ -93,7 +82,7 @@ font-family: 'Fira Code', 'Courier New', monospace;
     <div style={{ fontSize: '0.75rem', color: '#6B7280', marginBottom: '0.25rem' }}>
       base - 1rem (16px)
     </div>
-    <div style={{ fontSize: '1rem', fontWeight: '400' }}>
+    <div style={{ fontSize: '1rem', fontWeight: '400', fontFamily: 'Poppins' }}>
       The quick brown fox jumps over the lazy dog
     </div>
   </div>
@@ -102,7 +91,7 @@ font-family: 'Fira Code', 'Courier New', monospace;
     <div style={{ fontSize: '0.75rem', color: '#6B7280', marginBottom: '0.25rem' }}>
       lg - 1.125rem (18px)
     </div>
-    <div style={{ fontSize: '1.125rem', fontWeight: '400' }}>
+    <div style={{ fontSize: '1.125rem', fontWeight: '400', fontFamily: 'Poppins' }}>
       The quick brown fox jumps over the lazy dog
     </div>
   </div>
@@ -111,7 +100,7 @@ font-family: 'Fira Code', 'Courier New', monospace;
     <div style={{ fontSize: '0.75rem', color: '#6B7280', marginBottom: '0.25rem' }}>
       xl - 1.25rem (20px)
     </div>
-    <div style={{ fontSize: '1.25rem', fontWeight: '400' }}>
+    <div style={{ fontSize: '1.25rem', fontWeight: '400', fontFamily: 'Poppins' }}>
       The quick brown fox jumps over the lazy dog
     </div>
   </div>
@@ -120,7 +109,7 @@ font-family: 'Fira Code', 'Courier New', monospace;
     <div style={{ fontSize: '0.75rem', color: '#6B7280', marginBottom: '0.25rem' }}>
       2xl - 1.5rem (24px)
     </div>
-    <div style={{ fontSize: '1.5rem', fontWeight: '400' }}>
+    <div style={{ fontSize: '1.5rem', fontWeight: '400', fontFamily: 'Poppins' }}>
       The quick brown fox jumps over the lazy dog
     </div>
   </div>
@@ -129,7 +118,7 @@ font-family: 'Fira Code', 'Courier New', monospace;
     <div style={{ fontSize: '0.75rem', color: '#6B7280', marginBottom: '0.25rem' }}>
       3xl - 1.875rem (30px)
     </div>
-    <div style={{ fontSize: '1.875rem', fontWeight: '400' }}>
+    <div style={{ fontSize: '1.875rem', fontWeight: '400', fontFamily: 'Poppins' }}>
       The quick brown fox jumps over the lazy dog
     </div>
   </div>
@@ -138,7 +127,7 @@ font-family: 'Fira Code', 'Courier New', monospace;
     <div style={{ fontSize: '0.75rem', color: '#6B7280', marginBottom: '0.25rem' }}>
       4xl - 2.25rem (36px)
     </div>
-    <div style={{ fontSize: '2.25rem', fontWeight: '400' }}>
+    <div style={{ fontSize: '2.25rem', fontWeight: '400', fontFamily: 'Poppins' }}>
       The quick brown fox
     </div>
   </div>
@@ -147,7 +136,7 @@ font-family: 'Fira Code', 'Courier New', monospace;
     <div style={{ fontSize: '0.75rem', color: '#6B7280', marginBottom: '0.25rem' }}>
       5xl - 3rem (48px)
     </div>
-    <div style={{ fontSize: '3rem', fontWeight: '400' }}>
+    <div style={{ fontSize: '3rem', fontWeight: '400', fontFamily: 'Poppins' }}>
       The quick brown
     </div>
   </div>
@@ -156,7 +145,7 @@ font-family: 'Fira Code', 'Courier New', monospace;
     <div style={{ fontSize: '0.75rem', color: '#6B7280', marginBottom: '0.25rem' }}>
       6xl - 3.75rem (60px)
     </div>
-    <div style={{ fontSize: '3.75rem', fontWeight: '400' }}>
+    <div style={{ fontSize: '3.75rem', fontWeight: '400', fontFamily: 'Poppins' }}>
       Quick Fox
     </div>
   </div>
@@ -167,23 +156,23 @@ font-family: 'Fira Code', 'Courier New', monospace;
 ## Pesos (Font Weight)
 
 <div style={{ marginTop: '2rem' }}>
-  <div style={{ marginBottom: '1rem', fontSize: '1.125rem' }}>
-    <span style={{ fontWeight: 300 }}>Light (300)</span> - Texto leve
+  <div style={{ marginBottom: '1rem', fontSize: '1.125rem', fontFamily: 'Poppins' }}>
+    <span style={{ fontWeight: 300 }}>Light (300)</span> - Texto leve e delicado
   </div>
-  <div style={{ marginBottom: '1rem', fontSize: '1.125rem' }}>
-    <span style={{ fontWeight: 400 }}>Regular (400)</span> - Texto padrão
+  <div style={{ marginBottom: '1rem', fontSize: '1.125rem', fontFamily: 'Poppins' }}>
+    <span style={{ fontWeight: 400 }}>Regular (400)</span> - Texto padrão do corpo
   </div>
-  <div style={{ marginBottom: '1rem', fontSize: '1.125rem' }}>
+  <div style={{ marginBottom: '1rem', fontSize: '1.125rem', fontFamily: 'Poppins' }}>
     <span style={{ fontWeight: 500 }}>Medium (500)</span> - Destaque sutil
   </div>
-  <div style={{ marginBottom: '1rem', fontSize: '1.125rem' }}>
-    <span style={{ fontWeight: 600 }}>Semibold (600)</span> - Subtítulos
+  <div style={{ marginBottom: '1rem', fontSize: '1.125rem', fontFamily: 'Poppins' }}>
+    <span style={{ fontWeight: 600 }}>Semibold (600)</span> - Subtítulos e destaque
   </div>
-  <div style={{ marginBottom: '1rem', fontSize: '1.125rem' }}>
-    <span style={{ fontWeight: 700 }}>Bold (700)</span> - Títulos e ênfase
+  <div style={{ marginBottom: '1rem', fontSize: '1.125rem', fontFamily: 'Poppins' }}>
+    <span style={{ fontWeight: 700 }}>Bold (700)</span> - Títulos importantes
   </div>
-  <div style={{ marginBottom: '1rem', fontSize: '1.125rem' }}>
-    <span style={{ fontWeight: 800 }}>Extrabold (800)</span> - Muito forte
+  <div style={{ marginBottom: '1rem', fontSize: '1.125rem', fontFamily: 'Poppins' }}>
+    <span style={{ fontWeight: 800 }}>Extrabold (800)</span> - Máximo destaque
   </div>
 </div>
 
@@ -210,22 +199,25 @@ font-family: Poppins
 font-size: 1.875rem (30px)
 font-weight: 600
 line-height: 1.3
-font-family: Inter
+font-family: Poppins
 
 /* H4 - Título Menor */
 font-size: 1.5rem (24px)
 font-weight: 600
 line-height: 1.4
+font-family: Poppins
 
 /* H5 - Título de Card */
 font-size: 1.25rem (20px)
 font-weight: 600
 line-height: 1.5
+font-family: Poppins
 
 /* H6 - Menor Título */
 font-size: 1.125rem (18px)
 font-weight: 600
 line-height: 1.5
+font-family: Poppins
 ```
 
 ### Corpo de Texto (Body)
@@ -235,21 +227,25 @@ line-height: 1.5
 font-size: 1.125rem (18px)
 font-weight: 400
 line-height: 1.625
+font-family: Poppins
 
 /* Body Default */
 font-size: 1rem (16px)
 font-weight: 400
 line-height: 1.5
+font-family: Poppins
 
 /* Body Small */
 font-size: 0.875rem (14px)
 font-weight: 400
 line-height: 1.5
+font-family: Poppins
 
 /* Caption */
 font-size: 0.75rem (12px)
 font-weight: 400
 line-height: 1.5
+font-family: Poppins
 color: #6B7280
 ```
 
@@ -313,6 +309,41 @@ body { font-size: 1rem; }
 
 ---
 
+## Importando a Fonte
+
+### Google Fonts CDN
+
+Adicione no `<head>` do seu HTML:
+
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+```
+
+### CSS @import
+
+```css
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+```
+
+### NPM Package (opcional)
+
+```bash
+npm install @fontsource/poppins
+```
+
+```tsx
+import '@fontsource/poppins/300.css';
+import '@fontsource/poppins/400.css';
+import '@fontsource/poppins/500.css';
+import '@fontsource/poppins/600.css';
+import '@fontsource/poppins/700.css';
+import '@fontsource/poppins/800.css';
+```
+
+---
+
 ## Implementação
 
 ### Importando Tokens
@@ -321,7 +352,7 @@ body { font-size: 1rem; }
 import { typography } from 'simpy-design-system/tokens';
 
 const Heading = styled.h1`
-  font-family: ${typography.fontFamily.secondary};
+  font-family: ${typography.fontFamily.primary};
   font-size: ${typography.fontSize['4xl']};
   font-weight: ${typography.fontWeight.bold};
   line-height: ${typography.lineHeight.tight};
@@ -332,8 +363,7 @@ const Heading = styled.h1`
 
 ```css
 :root {
-  --font-primary: 'Inter', sans-serif;
-  --font-secondary: 'Poppins', sans-serif;
+  --font-primary: 'Poppins', sans-serif;
   --font-mono: 'Fira Code', monospace;
 
   --text-xs: 0.75rem;
@@ -341,10 +371,18 @@ const Heading = styled.h1`
   --text-base: 1rem;
   --text-lg: 1.125rem;
 
+  --weight-light: 300;
   --weight-regular: 400;
   --weight-medium: 500;
   --weight-semibold: 600;
   --weight-bold: 700;
+  --weight-extrabold: 800;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: var(--text-base);
+  font-weight: var(--weight-regular);
 }
 ```
 
@@ -367,5 +405,4 @@ const Heading = styled.h1`
 
 ---
 
-**Dica:** Use ferramentas como [Type Scale](https://typescale.com/) para visualizar
-e testar escalas tipográficas.
+**Dica:** A fonte Poppins é gratuita e open-source, disponível no [Google Fonts](https://fonts.google.com/specimen/Poppins).
